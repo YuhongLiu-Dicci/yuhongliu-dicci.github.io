@@ -14,7 +14,8 @@
 :root{--cream:#fbfdf8;--green:#c3ddc8;--green2:#eef6ef;--mint:#c9e8de;--mint2:#eaf6f2;--ink:#262b27;--muted:#68716a;--line:#e0e8e1;--deep:#2f6e52;--accent:#57896b;--soft:#7ba389}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-text-size-adjust:100%}
+img{max-width:100%}
 nav{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;position:sticky;top:0;background:#fbfdf8e8;backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid #e7eee8}
 nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-size:14px}
 .brand{font-weight:700;font-size:17px;margin:0;color:var(--deep)}
@@ -128,20 +129,33 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 .footer{margin-top:80px;font-family:Georgia,serif;font-style:italic;color:var(--soft)}
 @media(max-width:850px){
  nav div{display:none}
- .hero{grid-template-columns:1fr;padding:70px 7vw}
- .collage{height:500px}
- .two{grid-template-columns:1fr}
- .about-photo{height:500px}
+ .hero{grid-template-columns:1fr;min-height:0;padding:54px 7vw 70px;gap:38px}
+ .collage{height:520px;max-width:440px;width:100%;margin:0 auto}
+ .eyebrow{letter-spacing:.18em}
+ .roman{letter-spacing:.08em;font-size:14px}
+ .two{grid-template-columns:1fr;gap:30px}
  .edu,.cards,.project-grid,.toolbox{grid-template-columns:1fr}
- .project-grid .featured{grid-column:span 1}
- .contact-row{grid-template-columns:1fr}
- .section{padding:80px 7vw}
+ .honors{grid-template-columns:1fr;gap:22px}
+ .project-grid .featured{grid-column:span 1;grid-template-columns:1fr;gap:20px;padding:26px 24px}
+ .project-grid .featured img{height:200px}
+ .tl-logo{height:76px}
+ .tl-logo.sq{height:96px}
+ .contact-row{grid-template-columns:1fr;gap:22px}
+ .section{padding:64px 6vw}
 }
 @media(max-width:520px){
- .hero h1{font-size:62px}
- .collage{height:410px}
- .contact{margin:20px;border-radius:26px;padding:60px 7vw}
- .about-photo{height:420px}
+ .hero h1{font-size:52px}
+ .hero h2,.section h3,.contact h3{font-size:30px;margin:20px 0}
+ .collage{height:396px}
+ .cards h4{font-size:21px;margin:8px 0 10px}
+ .edu article,.cards article,.toolbox>div{padding:24px 22px}
+ .edu .when{float:none;display:block}
+ .actions{flex-wrap:wrap;gap:12px 22px}
+ .contact{margin:16px;border-radius:26px;padding:46px 6vw}
+ .mbti-right h4{font-size:21px}
+ .timeline{padding-left:26px}
+ .tl:before{left:-25px}
+ .tl ul{padding-left:16px}
 }
 </style>
 </head>

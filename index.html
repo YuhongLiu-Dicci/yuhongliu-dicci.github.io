@@ -117,9 +117,14 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 .contact-row a{color:var(--ink);font-weight:700;text-decoration:none}
 .copy-btn{margin-top:10px;width:max-content;border:1px solid #cfe0d3;background:#f6fbf7;border-radius:999px;padding:6px 12px;cursor:pointer;color:#5c7a66;font-size:12px}
 .copy-btn:hover{background:#fff}
-.mbti{margin-top:52px;text-align:center}
-.mbti img{width:min(430px,80vw)}
-.mbti-cap{margin:14px 0 0;font-family:Georgia,"Songti SC",serif;color:#4f8a6f;font-size:15.5px;letter-spacing:.02em}
+.mbti{margin-top:56px;display:grid;grid-template-columns:minmax(320px,440px) 1fr;gap:56px;align-items:center}
+.mbti img{width:100%;max-width:440px}
+.mbti-right h4{font-family:Georgia,"Songti SC",serif;font-weight:500;font-size:24px;color:var(--deep);margin:0 0 14px}
+.mbti-right>p{color:#566058;font-size:15px;margin:0 0 20px;max-width:560px}
+.mbti-points{display:flex;flex-direction:column;gap:12px}
+.mbti-points div{padding:14px 20px;background:#fff;border:1px solid var(--line);border-radius:16px;font-size:14.5px;color:#566058;line-height:1.7}
+.mbti-points b{color:var(--deep)}
+@media(max-width:850px){.mbti{grid-template-columns:1fr;gap:36px}.mbti img{width:min(430px,86vw);margin:0 auto}}
 .footer{margin-top:80px;font-family:Georgia,serif;font-style:italic;color:var(--soft)}
 @media(max-width:850px){
  nav div{display:none}
@@ -237,8 +242,18 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 <div><h5>常用工具</h5><p>处理数据、做图、写报告，一套流程跑通。</p><p class="tools">Excel · PowerPoint · Python · HTML · JASP</p></div>
 <div><h5>擅长领域</h5><p>从评价到准入，从研究到落地的医药知识体系。</p><p class="tools">药物经济学评价 · 市场准入与药事法规 · 医药行业研究 · 数据分析与可视化</p></div>
 </div>
-<div class="mbti"><img src="images/mbti_esfj.png" alt="MBTI ESFJ 能力气泡图">
-<p class="mbti-cap">MBTI · ESFJ「执政官」——利他务实、乐于协作，把每一份交付做到有交代</p></div>
+<div class="mbti">
+<img src="images/mbti_esfj.png" alt="MBTI ESFJ 能力气泡图">
+<div class="mbti-right">
+<h4>ESFJ「执政官」——利他务实，乐于协作</h4>
+<p>责任感强、同理心足，喜欢把事情安排妥当，也愿意为团队多走一步。放在医药行业里，就是这三件事：</p>
+<div class="mbti-points">
+<div><b>沟通协作：</b>跨团队项目里做"黏合剂"——信息透明、推动共识，对接到位。</div>
+<div><b>责任担当：</b>质控与合规要求高的工作交得放心——每条数据、每份报告都有交代。</div>
+<div><b>细节与共情：</b>十万级数据靠耐心与细致；做研究时，把患者视角放在心上。</div>
+</div>
+</div>
+</div>
 </section>
 
 <section id="work" class="section">

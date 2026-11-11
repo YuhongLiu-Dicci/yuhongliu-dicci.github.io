@@ -63,11 +63,11 @@ nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-size:14px}
 .honor-chips span{border-radius:999px;padding:8px 18px;font-size:14px;font-weight:500}
 .col-award .honor-chips span{background:var(--green2);border:1px solid #d2e4d5}
 .col-comp .honor-chips span{background:var(--mint2);border:1px solid #d1e6de}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:55px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
 .cards article{min-height:300px;padding:34px;border:1px solid var(--line);border-radius:28px;background:var(--green2)}
 .cards .mintcard{background:var(--mint2)}
 .cards small,.num{font-family:Georgia,serif;font-style:italic;color:#6f9e80}
-.cards h4,.project-grid h4{font-size:25px;margin:50px 0 12px}
+.cards h4{font-size:25px;margin:10px 0 12px}.project-grid h4{font-size:25px;margin:50px 0 12px}
 .cards p,.project-grid p{color:#5f6a62}
 .cards article div{font-size:12px;margin-top:28px;color:#7c8a80}
 .toolbox{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
@@ -87,6 +87,7 @@ nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-size:14px}
 .tl h4 small{font-weight:400;color:#8a948c;font-size:13px;margin-left:10px}
 .tl .when{font-size:13px;color:var(--accent);font-family:Georgia,serif;font-style:italic;white-space:nowrap}
 .tl-logo{height:88px;max-width:240px;width:auto;object-fit:contain;background:#fff;border:1px solid #e3ebe5;border-radius:14px;padding:12px 22px;box-shadow:0 6px 18px #466e550d}
+.tl-logo.sq{height:118px;max-width:280px;padding:14px 20px}
 .tl ul{margin:10px 0 0;padding-left:18px;font-size:14.5px;color:#566058;max-width:880px}
 .tl li{margin:5px 0}
 .tl li b{color:var(--deep);font-weight:600}
@@ -116,6 +117,9 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 .contact-row a{color:var(--ink);font-weight:700;text-decoration:none}
 .copy-btn{margin-top:10px;width:max-content;border:1px solid #cfe0d3;background:#f6fbf7;border-radius:999px;padding:6px 12px;cursor:pointer;color:#5c7a66;font-size:12px}
 .copy-btn:hover{background:#fff}
+.mbti{margin-top:52px;text-align:center}
+.mbti img{width:min(430px,80vw)}
+.mbti-cap{margin:14px 0 0;font-family:Georgia,"Songti SC",serif;color:#4f8a6f;font-size:15.5px;letter-spacing:.02em}
 .footer{margin-top:80px;font-family:Georgia,serif;font-style:italic;color:var(--soft)}
 @media(max-width:850px){
  nav div{display:none}
@@ -137,7 +141,7 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 </style>
 </head>
 <body>
-<nav><a class="brand" href="#top">YuhongLiu.me</a>
+<nav><a class="brand" href="#top">YuhongLiu_Dicci</a>
 <div class="nav-links">
 <a href="#about">关于我</a><a href="#skills">能力</a><a href="#work">实习</a><a href="#research">科研</a><a href="#contact">联系</a>
 </div></nav>
@@ -233,6 +237,8 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 <div><h5>常用工具</h5><p>处理数据、做图、写报告，一套流程跑通。</p><p class="tools">Excel · PowerPoint · Python · HTML · JASP</p></div>
 <div><h5>擅长领域</h5><p>从评价到准入，从研究到落地的医药知识体系。</p><p class="tools">药物经济学评价 · 市场准入与药事法规 · 医药行业研究 · 数据分析与可视化</p></div>
 </div>
+<div class="mbti"><img src="images/mbti_esfj.png" alt="MBTI ESFJ 能力气泡图">
+<p class="mbti-cap">MBTI · ESFJ「执政官」——利他务实、乐于协作，把每一份交付做到有交代</p></div>
 </section>
 
 <section id="work" class="section">
@@ -241,34 +247,34 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 <div class="timeline">
 <div class="tl"><div class="tl-head"><div class="tl-title"><h4>辉瑞 Pfizer · 商业分析与洞察<small>在岗</small></h4><span class="when">2026.08 – 2027.01</span></div><img class="tl-logo" src="images/logo_pfizer.jpg" alt="辉瑞 Pfizer"></div>
 <ul>
-<li><b>数据分析与策略支持：</b>主导处理超 10 万条洛拉替尼销售数据，通过 Excel 数据清洗与透视表分析，独立产出 6 份商业分析 PPT，精准定位产品增长瓶颈与潜力市场，为销售团队调整推广策略提供数据底座</li>
+<li><b>数据分析与策略支持：</b>主导处理超 <b>10 万条</b>洛拉替尼销售数据，通过 Excel 数据清洗与透视表分析，独立产出 <b>6 份</b>商业分析 PPT，精准定位产品增长瓶颈与潜力市场，为销售团队调整推广策略提供数据底座</li>
 <li><b>数据可视化创新：</b>深度参与团队交互式 HTML 报告制作，搭建交互式数据看板，将静态销售数据转化为可动态下钻、多维对比的直观图表，提升管理层与跨部门团队的决策效率</li>
-<li><b>项目评估与质控：</b>深度参与"脉络洞察"患者支持项目综合评估，追踪核查超 200 条患者随访数据，通过逻辑校验排查数据异常、优化采集流程，保障数据完整性与合规性</li>
+<li><b>项目评估与质控：</b>深度参与"脉络洞察"患者支持项目综合评估，追踪核查超 <b>200 条</b>患者随访数据，通过逻辑校验排查数据异常、优化采集流程，保障数据完整性与合规性</li>
 </ul></div>
 <div class="tl mint"><div class="tl-head"><div class="tl-title"><h4>赛麦德 SAI-Med · 医药咨询 PTA</h4><span class="when">2025.09 – 2026.07</span></div><img class="tl-logo" src="images/logo_saimed.jpg" alt="SAI-Med 赛麦德"></div>
 <ul>
-<li><b>临床试验数据转化：</b>对接默沙东、赛诺菲、百济神州等 Top MNC 药企，主导 4 项临床试验数据清洗与分析，独立产出可视化研究报告，将复杂临床终点数据转化为可落地的商业洞察，支撑客户研发与市场决策</li>
-<li><b>竞品动态与合规监测：</b>搭建杰特贝林、雅培医疗等重点项目竞品追踪体系，动态监测 20+ 竞品里程碑事件，在严格合规框架下输出结构化竞品分析报告，积累从数据到洞察的咨询方法论</li>
+<li><b>临床试验数据转化：</b>对接默沙东、赛诺菲、百济神州等 Top MNC 药企，主导 <b>4 项</b>临床试验数据清洗与分析，独立产出可视化研究报告，将复杂临床终点数据转化为可落地的商业洞察，支撑客户研发与市场决策</li>
+<li><b>竞品动态与合规监测：</b>搭建杰特贝林、雅培医疗等重点项目竞品追踪体系，动态监测 <b>20+</b> 竞品里程碑事件，在严格合规框架下输出结构化竞品分析报告，积累从数据到洞察的咨询方法论</li>
 </ul></div>
-<div class="tl"><div class="tl-head"><div class="tl-title"><h4>北京智云图咨询 · 大健康公关 · 行业研究</h4><span class="when">2025.03 – 2025.08</span></div><img class="tl-logo" src="images/logo_zyt.jpg" alt="北京智云图咨询"></div>
+<div class="tl"><div class="tl-head"><div class="tl-title"><h4>北京智云图咨询 · 大健康公关 · 行业研究</h4><span class="when">2025.03 – 2025.08</span></div><img class="tl-logo sq" src="images/logo_zyt.jpg" alt="北京智云图咨询"></div>
 <ul>
-<li><b>全球化传播：</b>参与 PRGN 出海视频传播项目，独立完成覆盖 30+ 国家的本土化传播资料库搭建，提升品牌海外触达效率</li>
-<li><b>品牌运营：</b>负责公众号运营，产出 10+ 篇原创推文；独立调研并从 0 到 1 搭建波士顿科学企业知识库，大幅缩短团队资料检索时间</li>
+<li><b>全球化传播：</b>参与 PRGN 出海视频传播项目，独立完成覆盖 <b>30+</b> 国家的本土化传播资料库搭建，提升品牌海外触达效率</li>
+<li><b>品牌运营：</b>负责公众号运营，产出 <b>10+</b> 篇原创推文；独立调研并从 <b>0 到 1</b> 搭建波士顿科学企业知识库，大幅缩短团队资料检索时间</li>
 </ul></div>
 <div class="tl mint"><div class="tl-head"><div class="tl-title"><h4>中国信息通信研究院 · 云计算与大数据研究所</h4><span class="when">2024.11 – 2025.01</span></div><img class="tl-logo" src="images/logo_caict.jpg" alt="中国信息通信研究院"></div>
 <ul>
-<li><b>产业图谱编撰：</b>深度参与《医药工业数智化转型全景图谱（2024）》编撰，独立调研 40+ 家标杆企业，系统梳理"AI+生物医药"数字化转型路径，提升对宏观政策与产业趋势的前瞻判断力</li>
-<li><b>大型会议协助：</b>协助筹备中国医药工业发展大会等 2 场国家级行业论坛，负责嘉宾对接与材料统筹，锻炼跨部门协作与大型项目管理能力</li>
+<li><b>产业图谱编撰：</b>深度参与《医药工业数智化转型全景图谱（2024）》编撰，独立调研 <b>40+</b> 家标杆企业，系统梳理"AI+生物医药"数字化转型路径，提升对宏观政策与产业趋势的前瞻判断力</li>
+<li><b>大型会议协助：</b>协助筹备中国医药工业发展大会等 <b>2 场</b>国家级行业论坛，负责嘉宾对接与材料统筹，锻炼跨部门协作与大型项目管理能力</li>
 </ul></div>
-<div class="tl"><div class="tl-head"><div class="tl-title"><h4>德邦证券 · 研究所 · 医药组</h4><span class="when">2024.09 – 2024.11</span></div><img class="tl-logo" src="images/logo_tebon.jpg" alt="德邦证券"></div>
+<div class="tl"><div class="tl-head"><div class="tl-title"><h4>德邦证券 · 研究所 · 医药组</h4><span class="when">2024.09 – 2024.11</span></div><img class="tl-logo sq" src="images/logo_tebon.jpg" alt="德邦证券"></div>
 <ul>
-<li><b>深度研究与报告撰写：</b>独立搭建云顶新耀发展历程及公司介绍框架，深度参与撰写首次覆盖报告；协助完成维罗纳制药、信达生物等 10+ 家医药企业复盘案例</li>
+<li><b>深度研究与报告撰写：</b>独立搭建云顶新耀发展历程及公司介绍框架，深度参与撰写首次覆盖报告；协助完成维罗纳制药、信达生物等 <b>10+</b> 家医药企业复盘案例</li>
 <li><b>管线动态追踪：</b>独立完成 Viking、Nurix 等多项临床里程碑及事件整理，追踪药企管线动态，精准提取关键临床终点数据，培养从产业逻辑到估值逻辑的完整认知</li>
-<li><b>会议纪要与项目支持：</b>系统统计医药行业 License-out 交易数量及金额，分析创新药出海趋势；完成 4 份高质量会议纪要，协助制作项目路演 PPT</li>
+<li><b>会议纪要与项目支持：</b>系统统计医药行业 License-out 交易数量及金额，分析创新药出海趋势；完成 <b>4 份</b>高质量会议纪要，协助制作项目路演 PPT</li>
 </ul></div>
-<div class="tl mint"><div class="tl-head"><div class="tl-title"><h4>Infini Capital 无极资本 · 医药投资分析</h4><span class="when">2023.10 – 2023.12</span></div><img class="tl-logo" src="images/logo_infini.jpg" alt="Infini Capital 无极资本"></div>
+<div class="tl mint"><div class="tl-head"><div class="tl-title"><h4>Infini Capital 无极资本 · 医药投资分析</h4><span class="when">2023.10 – 2023.12</span></div><img class="tl-logo sq" src="images/logo_infini.jpg" alt="Infini Capital 无极资本"></div>
 <ul>
-<li><b>财务模型与盈利质量分析：</b>深度研读 10+ 家医药企业年报与财务报告，完成数据提取与财务模型构建，测算核心利润表指标同比增速，剥离非经常性损益干扰，客观评估标的企业的成长性与盈利质量</li>
+<li><b>财务模型与盈利质量分析：</b>深度研读 <b>10+</b> 家医药企业年报与财务报告，完成数据提取与财务模型构建，测算核心利润表指标同比增速，剥离非经常性损益干扰，客观评估标的企业的成长性与盈利质量</li>
 <li><b>盈利能力拆解与横向对比：</b>独立拆解毛利率（GPM）、净利率（NPM）及扣非净利率，搭建可比公司（Comps）分析框架，通过横向对比行业标杆定位企业核心痛点</li>
 </ul></div>
 </div>
@@ -316,12 +322,12 @@ blockquote{font-family:Georgia,"Songti SC",serif;font-size:30px;max-width:760px;
 </section>
 
 <section id="contact" class="contact">
-<h3>保持联系，<br>期待与您交流。</h3>
+<h3>承蒙垂顾，<br>恳盼赐教。</h3>
 <p class="contact-intro">我的求职方向为医药咨询、数据分析、药物经济学评价、市场准入与行业研究。如蒙垂询，简历与作品将及时奉上，期待有机会向您请教。</p>
 <div class="contact-row">
 <div><small>电话 / 微信</small><a href="tel:18110061710">18110061710（微信同号）</a><button class="copy-btn" data-copy="18110061710">复制</button></div>
 <div><small>邮箱</small><a href="mailto:18304549038@163.com">18304549038@163.com</a><button class="copy-btn" data-copy="18304549038@163.com">复制</button></div>
-<div><small>坐标</small><a>北京 / 南京</a><button class="copy-btn" data-copy="北京 / 南京">复制</button></div>
+<div><small>坐标</small><a>北京 / 南京</a></div>
 <div><small>求职意向</small><a>医药咨询 / 数据分析 / 药物经济学</a></div>
 <div><small>简历</small><a href="resume.pdf" target="_blank">查看完整简历 ↗</a></div>
 </div>
